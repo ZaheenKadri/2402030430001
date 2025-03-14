@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onboarding Screen</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            background-color: #fff;
+        }
+        .container {
+            width: 90%;
+            max-width: 400px;
+        }
+        .image-container img {
+            width: 100%;
+            max-height: 250px;
+            object-fit: contain;
+        }
+        .text-content h2 {
+            font-size: 1.5rem;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        .text-content p {
+            font-size: 1rem;
+            color: gray;
+            margin-top: 10px;
+        }
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .dot {
+            width: 10px;
+            height: 10px;
+            margin: 0 5px;
+            background-color: lightgray;
+            border-radius: 50%;
+        }
+        .dot.active {
+            background-color: black;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: black;
+            color: white;
+            font-size: 1rem;
+            border-radius: 25px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="getstarted1.png" alt="Online Shopping Illustration">
+        </div>
+        <div class="text-content">
+            <h2>Online Shopping</h2>
+            <p>Buy anything you need anywhere and anytime with the guarantee of the best goods.</p>
+        </div>
+        <div class="pagination">
+            <div class="dot active"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+        <a href="getstarted2.html" class="btn">Next</a>
+    </div>
+</body>
+</html>

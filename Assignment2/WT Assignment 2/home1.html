@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - User Form</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #fff;
+            padding: 10px 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-btn, .cart-btn {
+            background: none;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        /* Product Section */
+        .product-details {
+            padding: 15px;
+        }
+
+        .product-title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .product-description {
+            font-size: 14px;
+            color: #666;
+        }
+
+        /* Floating Form */
+        .form-container {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 400px;
+            margin: 141px auto;
+            position: relative;
+            top: -20px;
+        }
+
+        .form-container h2 {
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .form-container input, .form-container select {
+            width: 100%;
+            padding: 10px;
+            margin: 14px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .submit-btn {
+            background: black;
+            color: white;
+            padding: 12px;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        /* Product Options */
+        .solar-options {
+            display: flex;
+            justify-content: space-around;
+            padding: 15px;
+            margin-top: -10px;
+        }
+
+        .solar-item {
+            background: #eee;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .navbar {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <button class="menu-btn">☰ Menu</button>
+        <span class="logo">SOLAR STORE</span>
+        <button class="cart-btn">🛒 2 Items</button>
+    </nav>
+
+    <!-- Floating User Form -->
+    <div class="form-container">
+        <h2>Your Details</h2>
+        <input type="text" placeholder="Full Name">
+        <input type="email" placeholder="Email">
+        <input type="tel" placeholder="Phone Number">
+        <select>
+            <option>Roof Type</option>
+            <option>Flat Roof</option>
+            <option>Sloped Roof</option>
+        </select>
+        <input type="text" placeholder="Home Address">
+        <select>
+            <option>Select City</option>
+            <option>New York</option>
+            <option>Los Angeles</option>
+            <option>Chicago</option>
+        </select>
+        <button class="submit-btn">Submit</button>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+
+        /* Container */
+        .container {
+            width: 95%;
+            max-width: 450px;
+            margin: auto;
+            padding: 10px;
+            background: white;
+        }
+
+        /* Header */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background: white;
+        }
+
+        .menu-icon {
+            font-size: 20px;
+            cursor: pointer;
+            background: #28a745;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .checkout {
+            font-size: 14px;
+            background: black;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        /* Product Grid */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 10px;
+            padding-top: 10px;
+        }
+
+        /* Product Card */
+        .product-card {
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-image {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .product-title {
+            font-size: 14px;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+
+        .product-price {
+            font-size: 12px;
+            color: #222;
+        }
+
+        .product-price strike {
+            color: red;
+            font-size: 10px;
+        }
+
+        /* Button */
+        .btn {
+            width: 100%;
+            padding: 8px;
+            border: none;
+            color: white;
+            font-size: 12px;
+            cursor: pointer;
+            text-align: center;
+            border-radius: 5px;
+            margin-top: 5px;
+            background: #6a5acd;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .container {
+                width: 98%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- Header -->
+        <div class="header">
+            <span class="menu-icon">☰ Menu</span>
+            <span class="checkout">📞 0923 891 6548 🛒 Checkout</span>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="product-grid">
+            
+            <!-- Product Card -->
+            <div class="product-card">
+                <img class="product-image" src="https://via.placeholder.com/140" alt="Product Image">
+                <div class="product-title">Hybrid Solar Power Kit</div>
+                <div class="product-price">
+                    <strike>12,000 PKR</strike> <b>10,000 PKR</b>
+                </div>
+                <button class="btn">View Solution</button>
+            </div>
+
+            <!-- Product Card -->
+            <div class="product-card">
+                <img class="product-image" src="https://via.placeholder.com/140" alt="Product Image">
+                <div class="product-title">Hybrid Solar Power Kit</div>
+                <div class="product-price">
+                    <strike>12,000 PKR</strike> <b>10,000 PKR</b>
+                </div>
+                <button class="btn">View Solution</button>
+            </div>
+
+            <!-- Product Card -->
+            <div class="product-card">
+                <img class="product-image" src="https://via.placeholder.com/140" alt="Product Image">
+                <div class="product-title">Hybrid Solar Power Kit</div>
+                <div class="product-price">
+                    <strike>12,000 PKR</strike> <b>10,000 PKR</b>
+                </div>
+                <button class="btn">View Solution</button>
+            </div>
+
+            <!-- Product Card -->
+            <div class="product-card">
+                <img class="product-image" src="https://via.placeholder.com/140" alt="Product Image">
+                <div class="product-title">Hybrid Solar Power Kit</div>
+                <div class="product-price">
+                    <strike>12,000 PKR</strike> <b>10,000 PKR</b>
+                </div>
+                <button class="btn">View Solution</button>
+            </div>
+
+            <!-- Product Card -->
+            <div class="product-card">
+                <img class="product-image" src="https://via.placeholder.com/140" alt="Product Image">
+                <div class="product-title">Hybrid Solar Power Kit</div>
+                <div class="product-price">
+                    <strike>12,000 PKR</strike> <b>10,000 PKR</b>
+                </div>
+                <button class="btn">View Solution</button>
+            </div>
+
+            <!-- Product Card -->
+            <div class="product-card">
+                <img class="product-image" src="https://via.placeholder.com/140" alt="Product Image">
+                <div class="product-title">Hybrid Solar Power Kit</div>
+                <div class="product-price">
+                    <strike>12,000 PKR</strike> <b>10,000 PKR</b>
+                </div>
+                <button class="btn">View Solution</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Page</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f8f8f8;
+        }
+
+        /* Container */
+        .container {
+            width: 95%;
+            max-width: 450px;
+            margin: auto;
+            padding: 10px;
+            background: white;
+            border-radius: 10px;
+        }
+
+        /* Search Bar */
+        .search-bar {
+            display: flex;
+            align-items: center;
+            background: #eaeaea;
+            padding: 8px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .search-bar input {
+            flex: 1;
+            border: none;
+            outline: none;
+            background: transparent;
+            padding: 5px;
+            font-size: 16px;
+        }
+
+        .cancel-btn {
+            color: #007bff;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        /* Section Titles */
+        .section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 0;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .view-all {
+            font-size: 12px;
+            color: #007bff;
+            cursor: pointer;
+        }
+
+        /* Search List */
+        .search-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .search-item {
+            display: flex;
+            align-items: center;
+            background: white;
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .search-icon {
+            width: 30px;
+            height: 30px;
+            background: #ddd;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .search-text {
+            flex: 1;
+            font-size: 14px;
+        }
+
+        .delete-btn {
+            font-size: 14px;
+            color: red;
+            cursor: pointer;
+        }
+        
+        /* Responsive */
+        @media (max-width: 600px) {
+            .container {
+                width: 98%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" placeholder="🔍 Search">
+            <span class="cancel-btn">Cancel</span>
+        </div>
+
+        <!-- Recent Search -->
+        <div class="section">
+            <span>Recent Search</span>
+            <span class="view-all">View All</span>
+        </div>
+        <ul class="search-list">
+            <li class="search-item">
+                <div class="search-icon"></div>
+                <span class="search-text">Headphone Joss</span>
+                <span class="delete-btn">✖</span>
+            </li>
+            <li class="search-item">
+                <div class="search-icon"></div>
+                <span class="search-text">Headphone Joss</span>
+                <span class="delete-btn">✖</span>
+            </li>
+        </ul>
+
+        <!-- Popular Search -->
+        <div class="section">
+            <span>Popular Search</span>
+            <span class="view-all">View All</span>
+        </div>
+        <ul class="search-list">
+            <li class="search-item">
+                <div class="search-icon"></div>
+                <span class="search-text">Headphone Joss</span>
+                <span class="delete-btn">✖</span>
+            </li>
+            <li class="search-item">
+                <div class="search-icon"></div>
+                <span class="search-text">Headphone Joss</span>
+                <span class="delete-btn">✖</span>
+            </li>
+        </ul>
+
+    </div>
+
+</body>
+</html>

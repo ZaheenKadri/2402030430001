@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+
+        /* Container */
+        .container {
+            width: 90%;
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+        }
+
+        /* Header */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .menu-icon {
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* Success Message */
+        .success-message {
+            background: #28a745;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        /* Product Image */
+        .product-image {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Product Description */
+        .product-description {
+            padding: 10px;
+            font-size: 14px;
+            color: #444;
+        }
+
+        /* Product Details Box */
+        .product-box {
+            background: #e4e9ff;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        /* Product Title */
+        .product-title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* Pricing */
+        .product-price {
+            font-size: 16px;
+            color: #222;
+        }
+
+        .product-price strike {
+            color: red;
+            font-size: 14px;
+        }
+
+        /* Buttons */
+        .btn {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+            text-align: center;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .btn-blue {
+            background: #4a60d4;
+        }
+
+        .btn-black {
+            background: black;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- Header -->
+        <div class="header">
+            <span class="menu-icon">☰ Menu</span>
+            <span>📞 0923 891 6548 🛒 Checkout</span>
+        </div>
+
+        <!-- Success Message -->
+        <div class="success-message">
+            "Bundle Test Product" has been added to your cart.
+        </div>
+
+        <!-- Product Image -->
+        <img class="product-image" src="https://via.placeholder.com/350x200" alt="Product Image">
+
+        <!-- Product Description -->
+        <div class="product-description">
+            <h3>Product Description</h3>
+            <p>Electrolux Presents Jade Inverter Air Conditioner with high BTU, heavy compressor, turbo cooling, and many unique features.</p>
+        </div>
+
+        <!-- Product Details Box -->
+        <div class="product-box">
+            <div class="product-title">Hybrid Solar Power Kit <span style="background:#6a5acd; color:white; padding:3px 8px; border-radius:5px;">Apply Today</span></div>
+            <div class="product-price">
+                <strike>12,000 PKR</strike> <b>10,000 PKR</b>
+            </div>
+            <button class="btn btn-blue">Create Quote</button>
+            <p>Enter your highest monthly bill:</p>
+            <button class="btn btn-black">Update</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
